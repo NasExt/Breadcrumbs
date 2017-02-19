@@ -1,0 +1,11 @@
+<ul class="breadcrumb">
+    {foreach $items as $item}
+        <li n:class="$iterator->isLast() ? active">
+            {if $iterator->isLast() || !$item->link}
+                {$item->title}
+            {else}
+                <a href="{$presenter->link($item->link, $item->linkArgs)}">{$item->title}</a>
+            {/if}
+        </li>
+    {/foreach}
+</ul>
