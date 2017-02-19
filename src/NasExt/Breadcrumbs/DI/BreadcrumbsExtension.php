@@ -6,7 +6,7 @@
  * the file license.txt that was distributed with this source code.
  */
 
-namespace NasExt\Breadcrumbs\Controls\DI;
+namespace NasExt\Breadcrumbs\DI;
 
 use NasExt\Breadcrumbs\Controls\IBreadcrumbsControlFactory;
 use Nette\DI\CompilerExtension;
