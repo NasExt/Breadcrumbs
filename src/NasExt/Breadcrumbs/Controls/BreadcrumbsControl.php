@@ -83,7 +83,8 @@ class BreadcrumbsControl extends Control {
 	 * @return BreadcrumbsNode
 	 */
 	protected function createComponentHomepage($name) {
-		$homepage = new BreadcrumbsNode($this, $name);
+		$homepage = new BreadcrumbsNode();
+        $this->addComponent($homepage, $name);
 		$homepage->isCurrent = TRUE;
 		$this->setCurrentNode($homepage);
 		return $homepage;
